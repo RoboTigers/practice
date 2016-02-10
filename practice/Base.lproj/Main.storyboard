@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rCz-SL-vVj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rCz-SL-vVj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -19,37 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Say something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RqE-HE-n11">
-                                <rect key="frame" x="20" y="28" width="160" height="76"/>
+                                <rect key="frame" x="20" y="72" width="160" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtS-Fr-Xtz">
-                                <rect key="frame" x="233" y="40" width="307" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtS-Fr-Xtz">
+                                <rect key="frame" x="233" y="79" width="307" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-FN-mer">
-                                <rect key="frame" x="233" y="152" width="297" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You said" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-hr-g4d">
+                                <rect key="frame" x="20" y="164" width="152" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcK-t3-U0m">
+                                <rect key="frame" x="240" y="284" width="120" height="30"/>
+                                <state key="normal" title="WHAT DID I SAY?"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="K2r-mf-Lp1" eventType="touchUpInside" id="1xl-x3-iwF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-FN-mer">
+                                <rect key="frame" x="233" y="160" width="307" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="297" id="HA4-S6-C0u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You said" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-hr-g4d">
-                                <rect key="frame" x="20" y="152" width="152" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcK-t3-U0m">
-                                <rect key="frame" x="240" y="272" width="120" height="30"/>
-                                <state key="normal" title="WHAT DID I SAY?"/>
-                                <connections>
-                                    <action selector="buttonAction:" destination="K2r-mf-Lp1" eventType="touchUpInside" id="1xl-x3-iwF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -57,17 +57,32 @@
                             <constraint firstItem="lUq-hr-g4d" firstAttribute="top" secondItem="RqE-HE-n11" secondAttribute="bottom" constant="48" id="AfX-06-p7J"/>
                             <constraint firstAttribute="leadingMargin" secondItem="lUq-hr-g4d" secondAttribute="leading" id="D16-rp-mtC"/>
                             <constraint firstItem="Z4y-FN-mer" firstAttribute="leading" secondItem="vtS-Fr-Xtz" secondAttribute="leading" id="Dmg-sC-34H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z4y-FN-mer" secondAttribute="trailing" constant="40" id="F66-lI-6on"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z4y-FN-mer" secondAttribute="trailing" constant="50" id="JUQ-WA-Xzg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z4y-FN-mer" secondAttribute="trailing" constant="40" id="Mfw-bW-whe"/>
                             <constraint firstItem="IcK-t3-U0m" firstAttribute="centerX" secondItem="EqE-hA-afR" secondAttribute="centerX" id="Xwe-Zf-wW6"/>
                             <constraint firstItem="Z4y-FN-mer" firstAttribute="leading" secondItem="lUq-hr-g4d" secondAttribute="trailing" constant="61" id="c5A-Qc-iki"/>
                             <constraint firstItem="Z4y-FN-mer" firstAttribute="top" secondItem="vtS-Fr-Xtz" secondAttribute="bottom" constant="82" id="ctI-0z-CTA"/>
                             <constraint firstItem="IcK-t3-U0m" firstAttribute="top" secondItem="Z4y-FN-mer" secondAttribute="bottom" constant="90" id="d8x-xf-skL"/>
+                            <constraint firstItem="vtS-Fr-Xtz" firstAttribute="top" secondItem="bAU-OY-rP1" secondAttribute="bottom" constant="15" id="dpG-6F-Tfe"/>
                             <constraint firstItem="Z4y-FN-mer" firstAttribute="top" secondItem="lUq-hr-g4d" secondAttribute="top" id="fNo-nJ-g9H"/>
                             <constraint firstAttribute="leadingMargin" secondItem="RqE-HE-n11" secondAttribute="leading" id="gSj-2x-rb1"/>
+                            <constraint firstItem="vtS-Fr-Xtz" firstAttribute="top" secondItem="bAU-OY-rP1" secondAttribute="bottom" constant="15" id="oqC-8K-AHN"/>
                             <constraint firstItem="vtS-Fr-Xtz" firstAttribute="leading" secondItem="RqE-HE-n11" secondAttribute="trailing" constant="53" id="sCJ-nN-eZU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vtS-Fr-Xtz" secondAttribute="trailing" constant="40" id="sPO-Ek-gO9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vtS-Fr-Xtz" secondAttribute="trailing" constant="40" id="x8Q-f7-0Vf"/>
+                            <constraint firstItem="vtS-Fr-Xtz" firstAttribute="centerY" secondItem="RqE-HE-n11" secondAttribute="centerY" id="ySo-gl-ASQ"/>
                             <constraint firstItem="Z4y-FN-mer" firstAttribute="top" secondItem="EqE-hA-afR" secondAttribute="top" constant="152" id="zhj-vJ-LKF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dpG-6F-Tfe"/>
+                                <exclude reference="F66-lI-6on"/>
+                                <exclude reference="JUQ-WA-Xzg"/>
+                                <exclude reference="ctI-0z-CTA"/>
+                                <exclude reference="zhj-vJ-LKF"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="RNB-dV-Iw7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yrL-h0-354">
