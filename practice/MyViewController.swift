@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyViewController: UIViewController, UITableViewDataSource {
+class MyViewController: UIViewController {
 
     @IBOutlet weak var wordfield: UITextField!
     @IBOutlet weak var repeatField: UITextField!
